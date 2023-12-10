@@ -5,3 +5,4 @@ To add a record, follow the format for one line: Album Name%&Album Photographer(
 Scanning starts at line 7. 
 ==================
 STI Marikina Talent Search 2023%&Adriene Dillo & Trisha Bravo%&Documentation%&October 2023%&STI Marikina Talent Search 2023.html%&https://drive.google.com/uc?export=view&id=1TZg7-Kt-pzHlz8JoMktFFf-Sdhl3pcj7
+The Bureau of Internal Revenue over the years%&Elias Chan, Aerol Jacob Epino, Elmer Felisilda, Kiro Fernandez, Nyx Galera, Sean Samson, Justineron Uberita%&Readings in Philippine History%&10 December 2023%&RPH.html%&https://drive.google.com/uc?export=view&id=1TjooSzpqSueKgPZC0idI7UO6r2e49z74
