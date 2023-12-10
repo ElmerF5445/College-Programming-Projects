@@ -1,0 +1,23 @@
+ShortenedLinks
+This text file contains all the shortened links of certain pages.
+Make sure that the ShortenedLinks_HasShortenedLink attribute on the body element exists and is set to "true".
+Line scanning starts at Line 6.
+#>
+ES_ContactUs.html%&https://bit.ly/ES-Socials
+ES_Articles.html%&https://bit.ly/ES-Articles
+ES_Gallery.html%&https://bit.ly/ES-Gallery
+STI%20Marikina%20Talent%20Search%202023.html%&https://bit.ly/ESA-Talent_Search_2023
+ES_AlbumViewer.html?albumName=Leaders_Convergence%&https://bit.ly/ESG-Leaders_Convergence_2023
+ES_AlbumViewer.html?albumName=General_Assembly_2023%&https://bit.ly/ESG-General_Assembly_2023
+ES_AlbumViewer.html?albumName=Fire_Drill_2023%&https://bit.ly/ESG-Fire_Drill_2023
+ES_AlbumViewer.html?albumName=TalentSearch2023_OpeningCeremony%&https://bit.ly/ESG-TS2023-Opening_Ceremony
+ES_AlbumViewer.html?albumName=TalentSearch2023_BattleOfTheBands%&https://bit.ly/ESG-TS2023-BOTB
+ES_AlbumViewer.html?albumName=TalentSearch2023_SingingIdol%&https://bit.ly/ESG-TS2023-SI
+ES_AlbumViewer.html?albumName=TalentSearch2023_HatawSayaw%&https://bit.ly/ESG-TS2023-HS
+ES_AlbumViewer.html?albumName=TalentSearch2023_MrAndMs_CasualWear%&https://bit.ly/ESG-TS2023-MMs-CW
+ES_AlbumViewer.html?albumName=TalentSearch2023_MrAndMs_SwimWear%&https://bit.ly/ESG-TS2023-MMs-SW
+ES_AlbumViewer.html?albumName=TalentSearch2023_MrAndMs_FormalWear%&https://bit.ly/ESG-TS2023-MMs-FW
+ES_AlbumViewer.html?albumName=TalentSearch2023_Intermissions%&https://bit.ly/ESG-TS2023-Intermissions
+ES_AlbumViewer.html?albumName=TalentSearch2023_Audience%&https://bit.ly/ESG-TS2023-Audience
+ES_AlbumViewer.html?albumName=TalentSearch2023_HostsAndTeachers%&https://bit.ly/ESG-TS2023-HT
+ES_AlbumViewer.html?albumName=TalentSearch2023_Awarding%&https://bit.ly/ESG-TS2023-Awarding
