@@ -4,5 +4,4 @@ This text file contains the records of the gallery that is currently up. ES_Gall
 To add a record, follow the format for one line: Album Name%&Album Photographer(s)%&Album Category%&Date Published%&File name of the index file associated with the album (remove Index_ prefix and .txt extension)%&Thumbnail image
 Scanning starts at line 7. 
 ==================
-STI Marikina Talent Search 2023%&Adriene Dillo & Trisha Bravo%&Documentation%&October 2023%&STI Marikina Talent Search 2023.html%&https://drive.google.com/uc?export=view&id=1TZg7-Kt-pzHlz8JoMktFFf-Sdhl3pcj7
 The Bureau of Internal Revenue over the years%&Elias Chan, Aerol Jacob Epino, Elmer Felisilda, Kiro Fernandez, Nyx Galera, Sean Samson, Justineron Uberita%&Readings in Philippine History%&10 December 2023%&RPH.html%&https://drive.google.com/uc?export=view&id=1TjooSzpqSueKgPZC0idI7UO6r2e49z74
