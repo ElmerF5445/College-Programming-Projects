@@ -157,7 +157,7 @@
     overflow: hidden;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../Assets/Background/default_darkmode.jpg");
+    background-image: url("https://drive.google.com/uc?export=view&id=1879Kkwq5BMeDiCWBkDM-lHjUmvHBvsTr");
 }
 
 .RPH_Page_2_Section_3_Text{
@@ -304,7 +304,7 @@
     position: absolute;
     border-radius: 10px;
     box-shadow: var(--Element-BoxShadow);
-    transform: rotate(-5deg);
+    transform: rotate(-5deg) scale(0.9);
 }
 
 .RPH_Page_3_Section_4{
@@ -392,7 +392,7 @@
     /* align-items: center; */
     /* background-color: black; */
     overflow-y: hidden;
-    background-image: url("../Assets/Background/default_lightmode.jpg");
+    background-image: url("https://drive.google.com/uc?export=view&id=1-ayULU1Jrqanqqe7o0VqIQtf7dc3ALXS");
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -479,27 +479,27 @@
 }
 
 .RPH_Page_4_Section_2_Cards_Item_Image[Image="1"]{
-    background-image: url("../Assets/Background/BG_SplashScreen.jpg");
+    background-image: url("https://drive.google.com/uc?export=view&id=1-O_6pqCQyo2ZcQsUodpmPcYwEcTOS_7g");
 }
 
 .RPH_Page_4_Section_2_Cards_Item_Image[Image="2"]{
-    background-image: url("../Assets/Background/city.jpg");
+    background-image: url("https://drive.google.com/uc?export=view&id=1-hCbjIkfPBMLWPbTrOoord6KrFkqEan7");
 }
 
 .RPH_Page_4_Section_2_Cards_Item_Image[Image="3"]{
-    background-image: url("../Assets/Background/default1.png");
+    background-image: url("https://drive.google.com/uc?export=view&id=1-L8Tht-X8D_-4VQMqtWlbyibvX8_XLfe");
 }
 
 .RPH_Page_4_Section_2_Cards_Item_Image[Image="4"]{
-    background-image: url("../Assets/Background/default_darkmode.jpg");
+    background-image: url("https://drive.google.com/uc?export=view&id=1-QkA-OAvD1qkZh_kjAazs63_SFMrNexI");
 }
 
 .RPH_Page_4_Section_2_Cards_Item_Image[Image="5"]{
-    background-image: url("../Assets/Background/default_lightmode.jpg");
+    background-image: url("https://drive.google.com/uc?export=view&id=1-HjRX81DV4mRnx4Hmf_A8l1fC8EXlfXO");
 }
 
 .RPH_Page_4_Section_2_Cards_Item_Image[Image="6"]{
-    background-image: url("../Assets/Background/default_New.png");
+    background-image: url("https://drive.google.com/uc?export=view&id=1-1mlbmKBXdvun8CQBRNiBesUlfvCJsYr");
 }
 
 .RPH_Page_4_Section_2_Cards_Item_Info{
@@ -637,4 +637,21 @@
     border: solid white;
     text-align: left;
     margin-bottom: 5px;
+}
+
+img{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Image_Loaded{
+    0%{
+        opacity: 0%;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1.0);
+    }
 }
