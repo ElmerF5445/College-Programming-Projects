@@ -24,7 +24,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 
-<body class="MainPage" onload="Subwindows_Open('ContentAdvisory')">
+<body class="MainPage">
 	<script src="Scripts/App_Javascript_Debugging.js"></script>
 	<script src="Scripts/App_Javascript_Properties.js"></script>
 	<script src="Scripts/App_Javascript_KeyboardControls.js"></script>
@@ -189,33 +189,19 @@
 		<div class="Modal" id="subwindow_ContentAdvisory">
 			<div class="Modal_TitleBar">
 				<h2 class="Modal_TitleBar_Title">
-					RPH - 05 Performance Task 1A
+					Notice
 				</h2>
 			</div>
 			<div class="Modal_Content">
 				<p class="General_Paragraph">
-					There are two versions of our output (with the same content).
-				</p>
-				<ul class="General_Paragraph">
-					<li>Presentation version - This is best viewed in a desktop browser and may not render properly in a mobile device. </li>
-					<li>Article version  - If the presentation version is not rendering properly on your device, you can open this one instead and it will bring you to a page similar to our Pre-finals Web Article.</li>
-				</ul>
-				<p class="General_Paragraph">
-					We recommend viewing the presentation version as it has the intended design and layout the group made for the project.
+					This page is best viewed in a desktop browser and may not render properly in a mobile device. <br>
+					If you're viewing this page in a mobile device, you can instead open the <u>article version.</u>
 				</p>
 			</div>
-			<div class="Modal_Content_Bottom" style="flex-direction: column; width: calc(100% - 15px)">
-				<a href="Articles/RPH_Antipolo_Article.html">
-					<div class="Subwindow_Bottom_Button_SecondaryAction" style="background-color: unset;">
-						Open article version
-					</div>
-				</a>
-				<a href="RPH_Antipolo_Presentation.html">
-					<div class="Subwindow_Bottom_Button_PrimaryAction">
-						Open presentation version
-					</div>
-				</a>
-				
+			<div class="Modal_Content_Bottom">
+				<div class="Subwindow_Bottom_Button_PrimaryAction" onclick="Subwindows_Close('ContentAdvisory')">
+					I understand, proceed
+				</div>
 			</div>
 		</div>
 		<div class="Subwindow RPH_Place_Subwindow" id="subwindow_RPH_Place_PintoArtMuseum">
@@ -662,7 +648,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="Tabs_Vertical_Container_Selector Page_Sidebar" id="pageElement_Sidebar">
+	<div class="Tabs_Vertical_Container_Selector Page_Sidebar" id="pageElement_Sidebar" State="Collapsed">
 		<div class="Tabs_Vertical_Container_Selector_Item" id="Button1" onclick="Tabs_ChangeTab(this.id, 'Vertical'), document.getElementById('Antipolo_Page_1').scrollIntoView()" Tabs_Tab_Title="Tab 1" Tabs_Tab_Target_Container="Page_MainContent" Tabs_Tab_Target_Tab="Antipolo_Page_1"  Tabs_UseHeaderTitle="true" State="Selected">
 			<div class="Tabs_Vertical_Container_Selector_Item_Icon">
 				<h2 class="Tabs_Vertical_Container_Selector_Item_Icon_Icon">
@@ -700,7 +686,7 @@
 				</h2>
 			</div>
 			<p class="Tabs_Vertical_Container_Selector_Item_Text">
-				Popular Landmarks and Tourist Spots
+				Popular Places
 			</p>
 		</div>
 		<div class="Tabs_Vertical_Container_Selector_Item" id="Button5" onclick="Tabs_ChangeTab(this.id, 'Vertical'), document.getElementById('Antipolo_Page_5').scrollIntoView()" Tabs_Tab_Title="Tab 1" Tabs_Tab_Target_Container="Page_MainContent" Tabs_Tab_Target_Tab="Antipolo_Page_5"  Tabs_UseHeaderTitle="true">
@@ -713,6 +699,18 @@
 				End of Presentation
 			</p>
 		</div>
+		<a href="Articles/RPH_Antipolo_Article.html">
+			<div class="Tabs_Vertical_Container_Selector_Item" style="position: absolute; bottom: 65px; width: calc(100% - 25px)">
+				<div class="Tabs_Vertical_Container_Selector_Item_Icon">
+					<h2 class="Tabs_Vertical_Container_Selector_Item_Icon_Icon">
+						A
+					</h2>
+				</div>
+				<p class="Tabs_Vertical_Container_Selector_Item_Text">
+					Article version
+				</p>
+			</div>
+		</a>
 	</div>
 	<main class="Page_Content" id="pageElement_Content" data-id="">
 		<div class="Page_MainContent" id="Page_MainContent" data-id="" Tabs_CurrentTab="">
@@ -720,8 +718,17 @@
 				<div class="RPH_Background" Background="1">
 					<!-- <img src="https://drive.google.com/uc?export=view&id=1c8HUi1Xdfu0__PW6vKEtvd_Hktl3eZjq" class="RPH_Background_Image" onload="this.style.opacity = '1'"/> -->
 				</div>
-				
-				
+				<h1 class="RPH_Font_Hansief RPH_Title_Big">
+					Welcome to Antipolo
+				</h1>
+				<h3 class="RPH_Font_Alexandria RPH_Title_Subtitle">
+					A quick tour to the beautiful place of Antipolo, Rizal, Philippines
+				</h3>
+				<div style="width: 100%; display: flex; justify-content: center; padding-top: 25px;">
+					<div class="General_Button" onclick="Tabs_ChangeTab_Specific('1', 'pageElement_Sidebar')">
+						Jump into action
+					</div>
+				</div>
 			</div>
 			<div class="Tab_Container_Content_Item" id="Antipolo_Page_2" style="width: 100%; height: 100%;">
 				<h1 class="RPH_Font_Hansief RPH_Title_Big_2">
@@ -1053,7 +1060,7 @@
 						<h1 class="RPH_Font_Hansief RPH_Page_5_Section_Title">
 							Article Version
 						</h1>
-						<a href="">
+						<a href="Articles/RPH_Antipolo_Article.html">
 							<div class="General_Button">
 								Click here to view the article version
 							</div>

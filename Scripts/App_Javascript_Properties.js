@@ -115,7 +115,7 @@ function Startup_Load_Properties(){
 			pageProperty_enableFullContainerMode = 0;
         break;
 		case "RPH_Antipolo.html":
-            pageProperty_pageIcon = "ContentByElmerF.png";
+            pageProperty_pageIcon = "favicon.png";
             pageProperty_MenuName = "RPH";
             pageProperty_PageTitle = "RPH - 05 Performance Task 1A";
             pageProperty_enableGreetings = 0;
@@ -131,6 +131,29 @@ function Startup_Load_Properties(){
             pageProperty_enableLoadingScreen = 0;
             pageProperty_enableHeader = 0;
             pageProperty_sidebarMoveContent = 0;
+            pageProperty_enableQuickSearch = 1;
+            pageProperty_quickSearch_addTopPadding = 1;
+            pageProperty_sidebar_UsesTabs = 1;
+			pageProperty_enableRibbon = 0;
+			pageProperty_enableFullContainerMode = 1;
+        break;
+		case "RPH_Antipolo_Presentation.html":
+            pageProperty_pageIcon = "favicon.png";
+            pageProperty_MenuName = "RPH";
+            pageProperty_PageTitle = "RPH - 05 Performance Task 1A | Presentation Version";
+            pageProperty_enableGreetings = 0;
+            pageProperty_enableSidebar = 1;
+            pageProperty_enableCategoryLabelIcons = 0;
+            pageProperty_lockSidebar = 0;
+            pageProperty_enableStatusBar = 0;
+            pageProperty_useProfileSystem = 0;
+            pageProperty_sidebarExpandedWidth = 300;
+            pageProperty_backgroundState = 1;
+            pageProperty_enableClockScreen = 0;
+            pageProperty_enableCategoryNavigation = 0;
+            pageProperty_enableLoadingScreen = 0;
+            pageProperty_enableHeader = 1;
+            pageProperty_sidebarMoveContent = 1;
             pageProperty_enableQuickSearch = 1;
             pageProperty_quickSearch_addTopPadding = 1;
             pageProperty_sidebar_UsesTabs = 1;
@@ -307,6 +330,7 @@ function Startup_Set_Properties(){
     Startup_Generate_Header_Buttons();
     Startup_Generate_Menu_NavigationList();
 	Startup_PlayAnimations();
+	
 }
 
 function Startup_Set_ExtraFunctions(){
@@ -361,6 +385,14 @@ function Startup_Set_VersionInfo(){
 		document.getElementById("LoadingScreen_CopyrightSection").style.animationFillMode = "forwards";
 	}
 	LoadingScreen_Close();
+	document.getElementById("pageElement_Header_MainMenu").style.display = "none";
+	document.getElementById("pageElement_Header_Actions").style.display = "none";
+	document.getElementById("pageElement_Header").style.backgroundColor = "unset";
+	document.getElementById("pageElement_Header").style.border = "unset";
+	document.getElementById("pageElement_Content").style.margin = "0";
+	document.getElementById("pageElement_Content").style.width = "100%";
+	document.getElementById("pageElement_Content").style.height = "100%";
+
 }
 
 function Startup_Generate_Menu_NavigationList(){

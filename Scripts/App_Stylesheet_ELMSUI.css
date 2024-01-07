@@ -194,7 +194,8 @@ img::before{
 }
 
 .Page_Sidebar{
-	background-color: var(--BG-Color-Overlay-Sidebar);
+	background-color: var(--BG-Color-Opacitated);
+	backdrop-filter: var(--Element-BackdropBlur);
 	margin-top: 50px;
 	padding-bottom: 50px;
 	border-top: solid var(--Color-Dividers);
@@ -214,6 +215,7 @@ img::before{
 
 .Page_Sidebar[State="Collapsed"]{
 	width: 40px;
+	transform: translateX(-60px);
 }
 
 .Page_Sidebar[data-id="UI_State_Compressed"]{
@@ -1838,7 +1840,7 @@ img::before{
 	cursor: pointer;
 	user-select: none;
 	transition: var(--Element-Transition-Delay);
-	filter: var(--Element-Icon-Brightness);
+	filter: invert(1);
 }
 
 .Sidebar_CategoryNavigation_Toggle[data-id="UI_Compressed"]{
@@ -2162,7 +2164,7 @@ img::before{
 .Subwindow_Bottom_Button_SecondaryAction{
 	padding: 5px;
 	border-radius: 5px;
-	background-color: var(--BG-Color-Button-General);
+	/* background-color: var(--BG-Color-Button-General); */
 	font-family: var(--Text-Font-Secondary), "Arial", "Helvetica";
 	color: var(--Text-Color);
 	outline: none;
@@ -2170,7 +2172,7 @@ img::before{
 	border-style: solid;
 	border-color: var(--BG-Color-Button-General-Accent);
 	border-width: 3px;
-	background-color: var(--BG-Color-Button-General);
+	/* background-color: var(--BG-Color-Button-General); */
 	cursor: pointer;
 	font-size: 17px;
 	text-align: center;

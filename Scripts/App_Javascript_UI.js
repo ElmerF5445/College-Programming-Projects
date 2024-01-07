@@ -545,10 +545,20 @@ function Ribbon_Toggle(State){
 
 var windowSizePreset = "normal";
 var windowDeviceType = "Desktop";
-window.addEventListener('resize', RD_Check_WindowSize);
+window.addEventListener('resize', RD_Check_WindowWidth);
 let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
+function RD_Check_WindowWidth(){
+	windowWidth = window.innerWidth;
+	windowHeight = window.innerHeight;
+	if (windowWidth < 1400){ //Small size
+		document.querySelector(":root").style.setProperty("--RD-Padding", "20px");
+		} else { //Normal size
+			document.querySelector(":root").style.setProperty("--RD-Padding", "15%");
+	}
+}
+
 function RD_Check_WindowSize(){
 	var Content = document.getElementById("pageElement_Content");
 	var MainContent = document.getElementById("Page_MainContent");
